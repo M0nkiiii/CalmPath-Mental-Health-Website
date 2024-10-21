@@ -1,0 +1,484 @@
+/* General Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f7f7;
+}
+
+/* Set overflow to hidden for the body on login and signup */
+body.login-page, body.signup-page {
+  overflow: hidden; 
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1, h2 {
+  color: #07c874;
+}
+
+footer {
+  background-color: #07c874;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  position: relative; 
+  width: 100%;
+}
+
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #055f4f;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .logo {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .logo img {
+  height: 60px;
+  margin-right: 10px;
+}
+
+.navbar .logo span {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+}
+
+.navbar .nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.navbar .nav-links li {
+  margin-left: 20px;
+}
+
+.navbar .nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.navbar .nav-links a:hover {
+  color: #9df1c4;
+}
+
+/* Login Page Specific Styles */
+.login-container {
+  display: flex;
+  height: 100vh; 
+}
+
+.left-section {
+  flex: 1;
+  background-color: #07c874;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 20px;
+}
+
+.left-section img {
+  max-width: 80%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.right-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-form {
+  background-color: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.login-form h2 {
+  color: #055f4f;
+  text-align: center;
+  font-size: 28px;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+/* Update the checkbox and remember me label */
+.login-form .checkbox-remember {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.login-form .checkbox-remember label {
+  display: inline-flex;
+  align-items: center;
+}
+
+.login-form .checkbox-remember input {
+  margin-right: 10px;
+}
+
+.login-form .checkbox-remember a {
+  margin-left: auto; 
+  color: #055f4f;
+  text-decoration: none;
+}
+
+.login-form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #07c874;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.login-form button:hover {
+  background-color: #055f4f;
+}
+
+/* Signup Page Specific Styles */
+.signup-container {
+  display: flex;
+  height: 100vh; 
+}
+
+.left-section {
+  flex: 1;
+  background-color: #07c874;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 20px;
+}
+
+.left-section img {
+  max-width: 80%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.right-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.signup-form {
+  background-color: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.signup-form h2 {
+  color: #055f4f;
+  text-align: center;
+  font-size: 28px;
+}
+
+.signup-form input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.signup-form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #07c874;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.signup-form button:hover {
+  background-color: #055f4f;
+}
+
+.signup-form p {
+  text-align: center;
+}
+
+/* Homepage Specific Styles */
+.homepage {
+  height: auto; 
+  overflow: auto; 
+  padding: 20px; 
+}
+
+.banner {
+  position: relative;
+  text-align: center;
+}
+
+.banner img {
+  width: 100%;
+  height: auto; 
+}
+
+.banner h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white; 
+  font-size: 36px; 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.introduction {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.introduction h2 {
+  color: #07c874;
+}
+
+.info-sections {
+  display: flex;
+  justify-content: space-around;
+  margin: 40px 0;
+}
+
+.info-section {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 30%; 
+  text-align: center;
+}
+
+.info-section h3 {
+  color: #055f4f;
+}
+
+.info-section a {
+  text-decoration: none;
+  color: #07c874; 
+}
+
+.info-section a:hover {
+  text-decoration: underline; 
+}
+
+
+/* About Us Page Specific Styles */
+.aboutus-container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.left-section, .team-section {
+  flex: 1; 
+  padding: 20px;
+}
+
+.left-section {
+  background-color: #f9f9f9; 
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.team-section {
+  margin-top: 40px; 
+}
+
+h2 {
+  color: #07c874; 
+}
+
+.left-section p {
+  color: #333; 
+}
+
+.team-member {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+  background-color: #f9f9f9; 
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.team-member img {
+  width: 60px; 
+  height: 60px; 
+  border-radius: 50%; 
+  margin-right: 15px;
+}
+
+.team-member h3 {
+  margin: 0;
+  color: #055f4f; 
+}
+
+.team-member p {
+  margin: 5px 0; 
+}
+
+/* Therapist Page Specific Styles */
+.therapist-container {
+  padding: 20px;
+  text-align: center;
+}
+
+.top-therapists, .therapist-categories {
+  margin: 20px 0;
+}
+
+h1, h2 {
+  color: #07c874;
+}
+
+.therapist-card {
+  display: inline-block;
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  width: 200px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  transition: transform 0.2s;
+}
+
+.therapist-card:hover {
+  transform: scale(1.05);
+}
+
+.therapist-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+button {
+  background-color: #07c874;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #055f4f;
+}
+
+
+.category {
+  margin: 20px 0;
+  padding: 10px;
+  border: 1px solid #07c874;
+  border-radius: 10px;
+}
+
+/* Contact Us Page Specific Styles */
+.contact-container {
+  padding: 20px;
+  text-align: center;
+}
+
+.contact-form, .contact-info, .map {
+  margin: 20px 0;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: white;
+}
+
+h1, h2 {
+  color: #07c874;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label {
+  margin-top: 10px;
+}
+
+input, textarea {
+  width: 80%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #07c874;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #055f4f;
+}
+
+
+.map iframe {
+  width: 100%;
+  border: 0;
+  border-radius: 10px;
+}
+
